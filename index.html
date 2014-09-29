@@ -21,7 +21,7 @@
 
 
 
-<body>
+<body class="testImg">
 
     <div class="navbar navbar-inverse" role="navigation">
       <div class="container">
@@ -38,7 +38,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -46,19 +46,31 @@
 
     <div class="container">
 
-      <div class="starter-template row">
-        <h1 class="col-md-3">Bootstrap starter template</h1>
-        <p>Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p>second paragraph goes here...</p>
+      <div class="row">
+        <div class="col-md-6 col-sm-4">
+          <h1>Bootstrap starter template</h1>
+        </div>
+        <div class="col-md-6 col-sm-8">
+          <p>Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+          <p>second paragraph goes here...</p>
+        </div>
       </div>
-    </div>
-
 
       <div class="row">
-        <div class="col-md-6">
-          <h1>Header goes here</h1>
+        <div class="col-sm-9">
+          <h2>Menu Section Title</h2>
+
+
+          <div class="row">
+            <div class="col-xs-8 col-sm-6">
+              Item One
+              <img class="img-responsive" src="img/myImage.png">
+            </div>
+            <div class="col-xs-4 col-sm-6">
+              Item two
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">.col-md-6</div>
       </div>
 
     </div><!-- /.container -->
