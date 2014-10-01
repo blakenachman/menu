@@ -18,8 +18,24 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-      #map-container { height: 300px }
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
     </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </head>
 
 
@@ -49,35 +65,7 @@
 
       <h1>Contact Page</h1>
         
-      <div id="map-container" class="col-md-6"></div>
-      
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-      
-      <script>    
- 
-      function init_map() {
-        var var_location = new google.maps.LatLng(38.629083, -90.194208);
- 
-        var var_mapoptions = {
-          center: var_location,
-          zoom: 14
-        };
- 
-        var var_marker = new google.maps.Marker({
-            position: var_location,
-            map: var_map,
-            title:"Venice"});
- 
-        var var_map = new google.maps.Map(document.getElementById("map-container"),
-            var_mapoptions);
- 
-        var_marker.setMap(var_map);    
- 
-      }
- 
-      google.maps.event.addDomListener(window, 'load', init_map);
- 
-      </script>
+      <div id="map_canvas"></div>
 
 
 
