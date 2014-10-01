@@ -24,6 +24,7 @@
         height: 400px;
       }
     </style>
+    var marker;
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -36,14 +37,16 @@
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
-        var Marker = new google.maps.Marker({
-          position: Latlng,
-          map:Map,
-          title:"The Map"
+      google.maps.event.addDomListener(window, 'load', initialize){
+        marker = new google.maps.Marker({
+          position: event.latLng,
+          map: map
         });
-        
-        Marker.setMap(Map);
+        google.maps.event.addListener(marker, "click", function() {
+          infowindow.open(map, marker);
+        });
+      }
+
     </script>
   </head>
 
