@@ -24,7 +24,7 @@ body {
 }
 
 .menu item{
-  font-weight:; bold;
+  strong { font-weight: bold; }
   font-family: :"Times New Roman";
 }
 
