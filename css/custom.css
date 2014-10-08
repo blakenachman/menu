@@ -24,11 +24,11 @@ body {
 }
 
 .menu item{
-  
+  font-weight=bold;
 }
 
 .description{
-  
+  font-style: italic;
 }
 
 h1, h2, h3 {
