@@ -24,7 +24,8 @@ body {
 }
 
 .menu item{
-  font-weight=bold;
+  font-weight: bold;
+  font-family: :"Times New Roman";
 }
 
 .description{
