@@ -10,6 +10,8 @@ body {
 
 .col-md-6, .col-md-12, .col-md-4, .col-md-3, .col-md-2 {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .fries, .sides{
