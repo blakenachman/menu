@@ -23,7 +23,11 @@ body {
   font-family: :"Times New Roman";
 }
 
-h1, h2, h3 {
+h1{
+  text-align: right;
+}
+
+h2, h3 {
   padding-bottom: 19px;
   margin-top: 0;
   margin-bottom: 0;
