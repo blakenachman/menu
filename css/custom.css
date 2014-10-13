@@ -1,7 +1,7 @@
 /*Use this for custom stuff*/
 
 /* Space out content a bit */
-.body, .textIMG {
+body, .textIMG {
   padding-top: 5px;
   padding-bottom: 20px;
   background-color: lavender;
