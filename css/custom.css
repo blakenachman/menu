@@ -1,14 +1,14 @@
 /*Use this for custom stuff*/
 
 /* Space out content a bit */
-body, .contactpage {
+body, .contactpage, .press {
   padding-top: 5px;
   padding-bottom: 20px;
   background-color: lavender;
 }
 
 
-.col-md-6, .col-md-12, .col-md-4, .col-md-3, .col-md-2, .col-md-8 {
+.col-md-6, .col-md-12, .col-md-4, .col-md-3, .col-md-2, .col-md-8, .press, .contactpage {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
